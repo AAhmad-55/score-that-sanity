@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@portabletext/react": "^4.0.3",
+    "@sanity/vision": "^4.12.0",
     "@tailwindcss/vite": "^4.1.16",
     "next": "16.0.0",
     "next-sanity": "^11.6.2",
