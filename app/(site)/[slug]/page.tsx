@@ -3,7 +3,11 @@ import Image from "next/image";
 import { PortableText } from '@portabletext/react';
 import Link from "next/link";
 
-export default async function Page({ params }) {
+interface PostPageParams {
+  slug: string;
+}
+
+export default async function Page({ params }: { params: PostPageParams }) {
     const { slug } = await params; // Await params if it's a Promise
     
     const pageObj = await getPage(slug);
